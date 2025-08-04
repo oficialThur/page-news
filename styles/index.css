@@ -1,1 +1,35 @@
 @import url(global.css);
+
+#primary{
+
+    padding-block: 20px;
+    
+    div{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    div:nth-child(2){
+        margin-inline: auto;
+    }
+
+    div:nth-child(3){
+        justify-self: end;
+    }
+
+    .ph{
+        font-size: 20px;
+        color: var(--text-color-secondary);
+        cursor: pointer;
+    }
+
+}
+
+#segundary{
+    border: solid 1px var(--stroke-color);
+    padding-block: 14px;
+    border-inline: none;
+    justify-content: space-between;
+}
+

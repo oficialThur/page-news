@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-;:root{
+:root{
     --brand-color-light: #60A5FA;
     --brand-color-dark: #1D4ED8;
     --bg-color: #0F172A;
@@ -22,8 +22,8 @@
 }
 
 body{
-    font: var(--text);
     background-color: var(--bg-color);
+    font: var(--text);
     color: var(--text-color-primary);
 }
 
@@ -39,3 +39,19 @@ a:hover{
 h1, h2, h3{
     color: inherit;
 }
+
+.container{
+    max-width: 1920px;
+    margin-inline: auto;
+    padding-inline: 32px;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-flow-col{
+    grid-auto-flow: column;
+}
+
+
