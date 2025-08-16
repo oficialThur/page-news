@@ -33,6 +33,29 @@
     justify-content: space-between;
 }
 
+section header{
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--text-span);
+    align-items: center;
+
+    a {
+        justify-self: end;
+        gap: 8px;
+     
+        .ph{
+            font-size: 20px;
+            color: var(--text-color-secondary);
+            cursor: pointer;
+        }
+
+        &:hover .ph{
+            color: var(--brand-color-light);
+        }
+     
+    }
+}
+
 #features{
     img {
         height: 100%;
@@ -75,5 +98,35 @@
         }
         
     }
+}
+
+#weekly{
+
+
+    &>div{
+        grid-template-columns: repeat(4, 292px);
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    
+    img{
+        height: 160px;
+    }
+
+    figure{
+        position: relative;
+
+        .content-tag{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+
+        p{
+            margin-top: 8px;
+        }
+    }
+
 }
 
